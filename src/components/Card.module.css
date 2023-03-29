@@ -1,0 +1,47 @@
+.card {
+  margin: 2vh 0;
+  padding: 20px;
+  background-color: #408e91;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card_img {
+  border-radius: 10px;
+  margin: 2vh 0;
+  overflow: hidden;
+}
+
+.card_img img {
+  transform: scale(1.1);
+  object-fit: cover;
+  height: auto;
+  width: 20vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.card_img:hover img {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+.card_head {
+  font-size: 2em;
+}
+.card_desc {
+  color: #d8d8d8;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .card_img img {
+    height: 30vh;
+    width: 50vw;
+  }
+  .card {
+    padding: 20px;
+  }
+  .card_head {
+    font-size: 1.5em;
+  }
+}
